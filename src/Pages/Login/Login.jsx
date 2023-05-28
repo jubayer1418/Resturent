@@ -106,7 +106,7 @@ const Login = () => {
                   <input
                     type="submit"
                     value={"login"}
-                    disabled={disabled}
+                    disabled={false}
                     className="btn btn-success"
                   />
                 </div>
