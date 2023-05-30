@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link to={"/menu"}>Our Menu</Link>
         <Link to={"/order/salad"}>Our Order</Link>
         <Link to={"/secret"}>Secret</Link>
-        <Link to={"/"}>
+        <Link to={"/dashboard/mycart"}>
           <div className="indicator">
             <span className="indicator-item badge badge-secondary">
               +{cart?.length || 0}
@@ -46,7 +46,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 ">
+    <div className="navbar  fixed z-10 bg-opacity-30 bg-black text-white max-w-screen-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -32,7 +32,7 @@ const Card = ({ item }) => {
           if (data.insertedId) {
             refetch();
             Swal.fire({
-              position: "top-end",
+              position: "top-center",
               icon: "success",
               title: "Food added on the cart.",
               showConfirmButton: false,

@@ -7,6 +7,7 @@ import {
 } from "react-simple-captcha";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Providers/AuthProvider";
+import SocialLogin from "../Shered/SocialLogin";
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
   const { signIn } = useContext(AuthContext);
@@ -106,7 +107,7 @@ const Login = () => {
                   <input
                     type="submit"
                     value={"login"}
-                    disabled={false}
+                    disabled={disabled}
                     className="btn btn-success"
                   />
                 </div>
@@ -117,6 +118,7 @@ const Login = () => {
               >
                 New to auth master?Please register?
               </Link>
+              <SocialLogin></SocialLogin>
             </div>
           </div>
         </div>
